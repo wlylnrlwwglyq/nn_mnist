@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>手書き数字の認識</title>
+		<link rel="stylesheet" href="./style.css">
+		<script type="text/javascript" src="./script.js"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=0.7,user-scalable=no">
+	</head>
+	<body>
+		<header>
+			<h1>手書き数字の認識</h1>
+			<p>ニューラルネットワークをjavascriptに移植し、ブラウザで手書き数字を認識できるようにしました。</p>
+			<a href="https://github.com/wlylnrlwwglyq/nn_mnist">GitHub</a>
+		</header>
+		<div id="content">
+			<div id="draw_area">
+				<canvas width="28" height="28" id="input"></canvas>
+			</div>
+			<input type="button" value="クリア" onclick="cleanCanvas();">
+			<canvas width="300" height="300" id="percentage"></canvas>
+		</div>
+	</body>
+</html>
